@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Special Elite', cursive; 
+  }
+
+  .html, body {
+    background-color: black;
+  }
+
+  .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 550px;
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+  }
+  
+  .wrapper .title h1{
+    color: white;
+    text-align: justify;
+    margin-bottom: 25px;
+  }
+
+  .form{
+    display: flex;
+  }
+
+  .input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+  
+  .input-fields,
+  .message{
+    width: 100%;
+  }
+  
+  .input-name, .input-email, .input-tel,
+  .message textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 1px;
+    border-bottom: 2px solid tomato;
+    padding: 10px;
+    color: white;
+    width: 100%;
+  }
+
+  
+  .message textarea{
+    height: 150px;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: white;
+  }
+
+     .button {
+      background: tomato;
+      text-align: center;
+      padding: 13px;
+      border-radius: 5px;
+      color: #fff;
+      text-transform: uppercase;
+      margin-top: 10px;
+      cursor: pointer;
+  }
+
+
+  @media screen and (max-width: 600px){
+    .form{
+      flex-direction: column;
+    }
+    .message textarea{
+      height: 80px;
+    }
+    .input-fields, .input-name, .input-email, .input-tel,
+    .message{
+      width: 100%;
+    }
+  }

@@ -1,0 +1,211 @@
+html, body{
+    font-family: 'Special Elite', cursive;
+    background-color: white;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  nav{
+    display: flex;
+    width: 100%;
+    height: 170px;
+    background: white;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+
+  .logo {
+    content: url('../img/crollday.jpg');
+  }
+
+  .dropbtn {
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-family: 'Special Elite', cursive;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: tomato;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: tomato;}
+  
+  .art {
+    height: 20vw;
+    background-size: cover;
+    background-position: center 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .artblock {
+    width: 25%;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  a:hover div {
+    transform: scale(1.2);
+    transition: 1s;
+  }
+  
+  @media all and (max-width: 320px) {
+    .artblock {
+      width: 50%;
+    }
+    .art {
+     height: 40vw;
+    }
+    .dropdown {
+      display: none;
+    }
+    .dropdown.burger-menu {
+      display: inline-block;
+      position: fixed;
+      left: 5px;
+      top: 0;
+      padding: 0;
+    }
+    .dropbtn:before, .dropbtn:after {
+      content: '';
+      background-color: white;
+      position: fixed;
+      width: 10%;
+      height: 2px;
+      left: 5px;
+      top: 5px;
+      padding: 0px;
+      transition: all 0.3s ease 0s;
+    }
+    .dropbtn:after {
+      margin-top: 5px;
+    }
+    .dropbtn span {
+      background-color: white;
+      position: fixed;
+      width: 10%;
+      height: 2px;
+      left: 5px;
+      top: 5px;
+      padding: 0px;
+      margin-top: 10px;
+      transition: all 0.3s ease 0s;
+    }
+    .dropbtn:hover .dropbtn:after {
+      background-color: white;
+      transform: rotate(45deg);
+      bottom: 5px;
+    }
+    .dropbtn:hover .dropbtn:before {
+      background-color: white;
+      transform: rotate(-45deg);
+      bottom: 10px;
+    }
+    .dropbtn:hover .dropbtn span {
+      transform: scale(0);
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .artblock {
+      width: 50%;
+    }
+    .art {
+     height: 40vw;
+    }
+    .dropdown {
+      display: none;
+    }
+    .dropdown.burger-menu {
+      display: inline-block;
+      position: fixed;
+      left: 5px;
+      top: 0;
+      padding: 0;
+    }
+    .dropbtn:before, .dropbtn:after {
+      content: '';
+      background-color: white;
+      position: fixed;
+      width: 10%;
+      height: 2px;
+      left: 5px;
+      top: 5px;
+      padding: 0px;
+      transition: all 0.3s ease 0s;
+    }
+    .dropbtn:after {
+      margin-top: 5px;
+    }
+    .dropbtn span {
+      background-color: white;
+      position: fixed;
+      width: 10%;
+      height: 2px;
+      left: 5px;
+      top: 5px;
+      padding: 0px;
+      margin-top: 10px;
+      transition: all 0.3s ease 0s;
+    }
+    .dropdown:hover .dropbtn:after {
+      background-color: white;
+      transform: rotate(45deg);
+      bottom: 5px;
+    }
+    .dropdown:hover .dropbtn:before {
+      background-color: white;
+      transform: rotate(-45deg);
+      bottom: 10px;
+    }
+    .dropdown:hover .dropbtn span {
+      transform: scale(0);
+    }
+  }
+  
+  
+  
+  @media all and (max-width: 800px) {
+    .artblock {
+      width: 50%;
+    }
+    .art {
+     height: 40vw;
+    }
+  }

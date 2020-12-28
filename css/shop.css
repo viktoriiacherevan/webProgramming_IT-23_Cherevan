@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.html, body {
+    background-color:black;
+    font-family: 'Special Elite', cursive; 
+  }
+
+  h1 {
+    color: white;
+    margin: 40px;
+    text-align: center;
+    font-size: 36px;
+}
+
+  table.styled-table {
+    margin: auto;
+    box-shadow: 0 0 10px white;
+    text-align: center;
+    border-collapse: collapse;
+  }
+
+  table.styled-table td, table.styled-table th {
+    padding: 20px 30px;
+  }
+
+  table.styled-table tbody td {
+    font-size: 15px;
+    font-weight: bold;
+    color: tomato;
+  }
+
+  table.styled-table td:nth-child(even) {
+    background: #141010;
+  }
+
+  table.styled-table thead {
+    background: tomato;
+  }
+  
+  table.styled-table thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+
+  .border{
+    text-align: center;
+    padding: 10px 80px;
+    font-size: 20px;
+    border: 2px solid;
+  }
+  
+  a {
+color: white;
+  }
+
+ .border:hover{
+    background: tomato;
+    color: #fff;
+  }
+
+  h2 {
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 36px;
+}
+
+ .img {
+    border: none;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
